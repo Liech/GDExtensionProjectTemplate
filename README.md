@@ -11,10 +11,29 @@ My personal toolchain for nearly all of my projects that is contained in here:
 * cmake
 * visual studio
 * catch2 for testing
+* clang-format
 
 You should be able to not use vcpkg by removing glm, nlohmann::json and catch2 from all Cmakelists.txt and use it as normal cmake project.
 Also remove all test stuff (which isn't much).
 
+# Project Structure
+
+* Library contains the logic (The Hello World string)
+* Executable contains a console Hello World programm calling Library
+* LibraryGD contains a HelloWorld godot object calling Library
+* godotProject displays text with help of the hello world string in LibraryGD
+* LibraryGD has a copy script to place the dll after each build in the correct place
+
+# Example iteration
+
+* set everything up
+* Start godotProject in godot
+* press play, see the string in ingame window
+* close ingame window (keep godotProject open)
+* manipulate the string in Library/HelloWorld.cpp
+* hit compile everything in Visual Studio
+ * LibraryGD dll is automatically copied as post build step to the correct place
+* press play, see the modified string in ingame window
 
 # VCPKG
 
