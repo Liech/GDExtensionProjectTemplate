@@ -2,7 +2,7 @@
 
 std::string HelloWorld::message() const
 {
-    return "Hamlo World";
+    return "Hello World from CPP Lib";
 }
 
 #ifdef ISTESTPROJECT

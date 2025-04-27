@@ -4,8 +4,8 @@ project(LibraryGD)
 set(Source_Files
     "register_types.h"
     "register_types.cpp"
-    "HelloWorld.h"
-    "HelloWorld.cpp"
+    "HelloWorldGD.h"
+    "HelloWorldGD.cpp"
 )
 source_group("Source" FILES ${Source_Files})
 
@@ -30,4 +30,4 @@ Library)
 add_custom_command(TARGET LibraryGD POST_BUILD 
                COMMAND ${CMAKE_COMMAND} -E copy_directory 
                $<TARGET_FILE_DIR:LibraryGD>              
-                ${CMAKE_SOURCE_DIR}/godot/bin)
+                ${CMAKE_SOURCE_DIR}/godotProject/bin)
