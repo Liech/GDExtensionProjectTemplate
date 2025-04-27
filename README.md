@@ -2,7 +2,7 @@
 
 I want to use this repository as starting point to develop crossplatform compatible GD Extensions.
 
-My personal toolchain for nearly all of my projects that is contained in here:
+My personal toolchain + Godot set up in this project:
 
 * C++ as language
 * glm for having geometric vector classes
@@ -12,6 +12,7 @@ My personal toolchain for nearly all of my projects that is contained in here:
 * visual studio
 * catch2 for testing
 * clang-format
+* GDExtension
 
 You should be able to not use vcpkg by removing glm, nlohmann::json and catch2 from all Cmakelists.txt and use it as normal cmake project.
 Also remove all test stuff (which isn't much).
