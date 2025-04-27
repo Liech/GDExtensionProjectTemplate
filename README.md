@@ -32,7 +32,6 @@ Also remove all test stuff (which isn't much).
 * close ingame window (keep godotProject open)
 * manipulate the string in Library/HelloWorld.cpp
 * hit compile everything in Visual Studio
- * LibraryGD dll is automatically copied as post build step to the correct place
 * press play, see the modified string in ingame window
 
 # VCPKG
